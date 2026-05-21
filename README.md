@@ -10,7 +10,7 @@ While PostgreSQL is a masterpiece of relational engineering, its standard Extern
 
 > 📌 **Note:** The mathematical foundations, dynamic heuristics, and exhaustive standalone benchmarks of the Multimerge engine are fully detailed and tested in the primary repository.
 
-👉 **Core Multimerge Sorting Repository**
+> 👉 **[Core Multimerge Sorting Repository](https://github.com/fbcouto/adaptive-parallel-multimerge-sort)**
 
 The core theoretical foundation of this parallel architecture is based on the original research and paper:
 
