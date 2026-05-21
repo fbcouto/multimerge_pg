@@ -43,6 +43,9 @@ The project evolved through critical stages of performance optimization:
 ---
 
 # 📊 Performance Benchmark (Integers)
+<p align="center">
+  <img src="./comparacaoPostgree.JPG" alt="Performance Evolution" width="800">
+</p>
 
 The following table summarizes the performance of **multimerge_pg** against the native PostgreSQL engine. Note the divergence as the dataset size exceeds available memory, forcing PostgreSQL to spill data to disk.
 
