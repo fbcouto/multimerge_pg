@@ -1,0 +1,24 @@
+[package]
+name = "multimerge_pg"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+default = ["pg17"]
+pg17 = ["pgrx/pg17", "pgrx-tests/pg17"]
+
+[dependencies]
+pgrx = "0.18.0"
+rayon = "1.12.0"
+bumpalo = { version = "3.16", features = ["collections"] }
+
+[dev-dependencies]
+pgrx-tests = "0.18.0"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
