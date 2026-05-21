@@ -136,6 +136,10 @@ SELECT count(*) FROM pg_multimerge_binary_copy(
     'SELECT (random() * 1000000)::integer FROM generate_series(1, 200000000)',
     'C:/Users/Public/pg_batch.bin'
 );
+
+-- Run on Native Postgree for comparison
+EXPLAIN ANALYZE SELECT * FROM (SELECT (random() * 1000000)::integer AS val FROM generate_series(1, 200000000)) sub ORDER BY val;
+
 ```
 
 ---
