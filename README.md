@@ -233,6 +233,7 @@ This engine stands as a reference case: with Rust, we can push PostgreSQL beyond
 
 ---
 
+
 # 📄 License
 
 This project is licensed under the Apache License 2.0.
@@ -245,9 +246,6 @@ Copyright © Fernando B. Couto
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this project except in compliance with the License.
-You may obtain a copy of the License at:
-
-<http://www.apache.org/licenses/LICENSE-2.0>
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
