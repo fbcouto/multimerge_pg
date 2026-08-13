@@ -17,6 +17,9 @@ bumpalo = { version = "3.16", features = ["collections"] }
 
 [dev-dependencies]
 pgrx-tests = "0.18.0"
+# Necessário para o mod tests dentro de src/multimerge.rs (StdRng / gen_range),
+# herdado do núcleo adaptive-parallel-multimerge-sort.
+rand = "0.8"
 
 [profile.release]
 opt-level = 3

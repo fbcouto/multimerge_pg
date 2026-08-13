@@ -1,0 +1,8 @@
+[env]
+# Clang 19+ passou a tratar como ERRO um mismatch de tipagem inofensivo
+# (uint32* vs long*) dentro de port/atomics/generic-msvc.h do Postgres,
+# que compiladores mais antigos só reportavam como warning. No modelo de
+# dados do Windows (LLP64) `long` e `unsigned int` têm o mesmo tamanho
+# (32 bits), então não há risco de ABI aqui — é só rebaixar o diagnóstico
+# de volta a warning para o bindgen conseguir gerar os bindings do pg17.
+BINDGEN_EXTRA_CLANG_ARGS = "-Wno-error=incompatible-pointer-types"
